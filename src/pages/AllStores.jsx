@@ -95,6 +95,7 @@ export default function AllStores() {
                     </div>
                 </div>
             </Col>
+
         </Row>
     );
 }
