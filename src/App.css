@@ -1,38 +1,187 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  font-family: "Cabinet Grotesk", sans-serif !important;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #f5f5f5;
+}
+.menu-wrap-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+.navigation-bar .search-bar input {
+  outline: 0px;
+  border: none;
+  width: 400px;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Cabinet Grotesk", sans-serif;
+  padding-top: 5px;
+}
+
+.search-bar {
+  background: #feffff;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px inset;
+  padding: 10px 4px;
+  border: 1px solid #f8f8f7;
+  border-radius: 5px;
+}
+
+.form {
+  display: inline-flex;
+  align-items: center;
+}
+.navigation-bar button {
+  border: none;
+  background: transparent;
+}
+
+.location {
+  font-size: 18px;
+  font-family: "Cabinet Grotesk", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: 5px;
+
+  margin: 0px 35px 0px 0px;
+}
+
+.navigation-bar .search-bar input:focus {
+  outline: none;
+}
+
+.navigation-bar .login-buttons {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Cabinet Grotesk", sans-serif;
+  gap: 20px;
+}
+
+.navigation-bar .login-buttons a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-bar .login-buttons .login-btn {
+  background: #108910;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.login-buttons .shopping-cart {
+  padding: 5px 10px;
+  background-color: #f8f8f8;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: 8px;
+}
+
+.shopping-cart .cart-item-counter {
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 700;
+}
+.shopping-categories .category-name {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-family: "Cabinet Grotesk", sans-serif;
+  padding-bottom: 10px;
+}
+
+.shopping-categories .icon-link {
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shopping-categories .category-name {
+  text-decoration: none;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shopping-categories .category-name:hover {
+  border-bottom: 2px solid grey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.hero-wrapper {
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+}
+
+.hero-wrapper h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 650;
+}
+
+.filters {
+  display: inline-flex;
+  align-items: left;
+  gap: 16px;
+  padding: 30px 0px;
+}
+
+.filters a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: rgb(231, 231, 231);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+/* Cards styling */
+
+.store-card {
+  background: rgb(255, 255, 255);
+}
+
+.store-details-wrapper {
+  line-height: 20px;
+}
+
+.store-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.delivery-eta {
+  color: #108910;
+  font-weight: 500;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category {
+  background: rgb(243, 243, 243);
+  padding: 1px;
 }
