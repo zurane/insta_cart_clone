@@ -8,7 +8,7 @@ import Makro from "../makro-icon-logo.png";
 export default function Alcohol () {
 
     return (
-        <Row className="mx-5">
+        <Row className="mx-4 px-2">
         <Col className="py-3 mx-1 rounded store-card border">
                 <div className="d-flex align-items-center gap-3">
                     <div className="store-logo-wrapper border py-3 px-2 rounded">
@@ -70,7 +70,7 @@ export default function Alcohol () {
             <Col className="py-3 mx-1 rounded store-card border">
                 <div className="d-flex align-items-center gap-3">
                     <div className="store-logo-wrapper border py-3 px-2 rounded">
-                        <img src={Makro} alt="store logo" width={60} />
+                        <img src={Makro} alt="store logo" width={50} />
                     </div>
                     <div className="store-details-wrapper">
                         <span className="store-name">Makro</span>

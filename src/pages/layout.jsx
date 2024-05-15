@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Instacart_Logo_Kale.svg";
 import StoreCard from "../components/storeCard";
+import Banner from "../components/banner";
 
 export default function () {
     return (
@@ -47,6 +48,7 @@ export default function () {
             <main>
                 <StoreCard />
             </main>
+            <Banner />
         </>
     );
 } 

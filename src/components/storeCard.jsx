@@ -1,23 +1,31 @@
 import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-export default function storeCard() {
-
+export default function StoreCard() {
+    // create a css stylesheet object for active links
     const activeStyle = {
         fontWeight: "bold",
         paddingBottom: 10 + "px",
+        // here we use a string concatenation to combine multiple data types into a single string.
         borderBottom: 2 + "px" + " " + "solid" + " " + "black",
     };
 
+    // Returns the current location object, which represents the current URL in web browsers.
+    const location = useLocation();
+    // A URL pathname, beginning with a /. and the we split the pathname to exclude the forward slash.
+    const currentUrl = location.pathname.split('/');
+    
     return (
         <>
             <Container fluid>
                 {/* Categories Tab bar  */}
                 <Row className="py-2 mx-3 mt-4">
-                    <h2 className="pb-3 heading">All stores in Johannesburg</h2>
-                    <div className="shopping-categories d-flex gap-5 py-2 align-center">
+                    {/* To keep track of the currentURL location in our application and let the user know which section of the application they are on*/}
+                    <h2 className="pb-3 heading"><span className="current-url">{currentUrl}</span> in Johannesburg</h2>
+                    <div className="shopping-categories d-flex gap-4 py-2 align-center">
                         <div className="icon-link">
                             <div>
                                 <svg
@@ -33,7 +41,7 @@ export default function storeCard() {
                             <div>
                                 <NavLink
                                     style={({ isActive }) => (isActive ? activeStyle : null)}
-                                    to="/"
+                                    to="all-stores"
                                     className="category-name"
                                 >
                                     All stores
@@ -242,32 +250,32 @@ export default function storeCard() {
                         </div>
                     </div>
                     <div className="filters">
-                        <div>
+                        <div className="filter">
                             <NavLink>
                                 Fastest
                             </NavLink>
                         </div>
-                        <div>
+                        <div className="filter">
                             <NavLink>
                                 Offers
                             </NavLink>
                         </div>
-                        <div>
+                        <div className="filter">
                             <NavLink>
                                 In-store prices
                             </NavLink>
                         </div>
-                        <div>
+                        <div className="filter">
                             <NavLink>
                                 EBT
                             </NavLink>
                         </div>
-                        <div>
+                        <div className="filter">
                             <NavLink>
                                 Pickup
                             </NavLink>
                         </div>
-                        <div>
+                        <div className="filter">
                             <NavLink>
                                 New
                             </NavLink>
@@ -275,7 +283,6 @@ export default function storeCard() {
                     </div>
                 </Row>
                 {/* end of tabs */}
-
             </Container>
             <Outlet />
         </>

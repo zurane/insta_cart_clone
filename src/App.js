@@ -20,7 +20,7 @@ function App() {
       <Routes>
         {/* The layout element will become the primary or default page of our application */}
         <Route path='/' element={<Layout />}>
-          <Route index element={<AllStores />} />
+          <Route path='all-stores' element={<AllStores />} />
           <Route path='groceries' element={<Groceries />} />
           <Route path='alcohol' element={<Alcohol />} />
           <Route path='beauty' element={<Beauty />} />

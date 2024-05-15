@@ -3,9 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-y: scroll;
-  font-family: "Cabinet Grotesk", sans-serif !important;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
 
+/* Loaction: src\pages\layout.jsx */
+/* Navigation styles */
 .navigation-bar {
   display: flex;
   align-items: center;
@@ -14,12 +16,14 @@ body {
   background: #ffffff;
   border-bottom: 1px solid #f5f5f5;
 }
+/* Burger menu and logo container on the navigation  */
 .menu-wrap-container {
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
   gap: 20px;
 }
+/* Search bar */
 .navigation-bar .search-bar input {
   outline: 0px;
   border: none;
@@ -59,6 +63,11 @@ body {
   gap: 5px;
 
   margin: 0px 35px 0px 0px;
+}
+
+.location span {
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .navigation-bar .search-bar input:focus {
@@ -101,6 +110,10 @@ body {
   color: #ccc;
   font-weight: 700;
 }
+
+/* End of navigation bar styles */
+
+/* Shopping categories bottom bar tabs with icons */
 .shopping-categories .category-name {
   font-size: 18px;
   text-align: left;
@@ -153,12 +166,12 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  background-color: rgb(231, 231, 231);
+  background-color: #e7e7e7;
   padding: 5px 20px;
   border-radius: 50px;
 }
 
-/* Cards styling */
+/* Store Cards styling */
 
 .store-card {
   background: rgb(255, 255, 255);
@@ -184,4 +197,69 @@ body {
 .category {
   background: rgb(243, 243, 243);
   padding: 1px;
+}
+
+.filters .filter a:hover {
+  background: #dadada;
+}
+
+.banner {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background: #d43684;
+  padding: 13px 0px 5px 0px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 5;
+}
+
+.banner-content h6 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.banner-content .small-text {
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.current-url {
+  text-transform: capitalize;
+}
+
+.shop-btn-block {
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.shop-btn {
+
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #d43684;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-close-btn {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.close {
+  display: none;
 }
