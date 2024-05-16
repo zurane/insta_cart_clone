@@ -8,7 +8,7 @@ export default function StoreCard() {
   // create a css stylesheet object for active links
   const activeStyle = {
     fontWeight: "bold",
-    paddingBottom: 10 + "px",
+    paddingBottom: "10px",
     // here we use a string concatenation to combine multiple data types into a single string.
     borderBottom: "2px solid #000000",
   };
@@ -25,7 +25,7 @@ export default function StoreCard() {
         <Row className="py-1 mx-3">
           {/* To keep track of the currentURL location in our application and let the user know which section of the application they are on*/}
           <h3 className="pb-3 heading">
-            <span className="current-url">{currentUrl}</span> in and around Johannesburg
+            <span className="current-url">{currentUrl}</span> in Johannesburg
           </h3>
 
           {/* Shopping categories tabs */}
