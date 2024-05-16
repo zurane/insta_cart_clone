@@ -3,7 +3,7 @@ import logo from "../assets/Instacart_Logo_Kale.svg";
 import Tabs from "../components/Tabs";
 import Banner from "../components/banner";
 
-export default function () {
+export default function Layout() {
     return (
         <>
             <header>
