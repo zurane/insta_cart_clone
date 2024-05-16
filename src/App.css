@@ -240,7 +240,7 @@ body {
 .banner-content h6 {
   text-align: center;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   align-self: center;
 }
@@ -286,6 +286,15 @@ body {
 
 .reference-link-btn {
   position: fixed;
-  bottom: 30px;
-  left: 20px;
+  bottom: 18px;
+  left: 10px;
+  z-index: 99;
+}
+
+.reference-link-btn a {
+  text-decoration: none;
+  color: #ffffff;
+  background: #23aa23;
+  border-radius: 50px;
+  padding: 10px;
 }
