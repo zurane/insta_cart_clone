@@ -283,3 +283,9 @@ body {
 .close {
   display: none;
 }
+
+.reference-link-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+}

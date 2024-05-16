@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/Instacart_Logo_Kale.svg";
 import Tabs from "../components/Tabs";
 import Banner from "../components/banner";
+import ReferenceLink from "../components/ReferenceFloatingLink";
 
 export default function Layout() {
     return (
@@ -102,6 +103,7 @@ export default function Layout() {
                 <Tabs />
             </main>
             <Banner />
+            <ReferenceLink/>
         </>
     );
 }
