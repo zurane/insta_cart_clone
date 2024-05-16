@@ -25,7 +25,7 @@ export default function StoreCard() {
         <Row className="py-1 mx-3">
           {/* To keep track of the currentURL location in our application and let the user know which section of the application they are on*/}
           <h3 className="pb-3 heading">
-            <span className="current-url">{currentUrl}</span> in Johannesburg
+            <span className="current-url">{currentUrl}</span> in and around Johannesburg
           </h3>
 
           {/* Shopping categories tabs */}
