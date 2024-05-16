@@ -1,9 +1,9 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Sportscene from "../sportscene_store_logo_8850bbe605.png";
-import Woolworths from "../woolworths.svg";
-import Zara from "../ZARA.png";
+import Sportscene from "../assets/sportscene_store_logo_8850bbe605.png";
+import Woolworths from "../assets/woolworths.svg";
+import Zara from "../assets/ZARA.png";
 
 export default function Retail() {
 

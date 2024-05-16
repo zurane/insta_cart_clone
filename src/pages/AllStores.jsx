@@ -1,101 +1,174 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import PicknPayLogo from "../PicknPayLogo.svg";
-import Woolworths from "../woolworths.svg";
-import Checkers from "../checkers-logo.svg";
+import Store from "../components/Store";
+import Cerave from "../assets/cerave-logo-top.svg";
+import Deluxe from "../assets/deluxe.jpg";
+import Sorbet from "../assets/sorbet.jpg";
+import Game from "../assets/game-logo.png";
+import LeroyMerlin from "../assets/leroy-merlin.svg";
+import Makro from "../assets/makro-icon-logo.png";
+import LiquorBoys from "../assets/liquor-boys.png";
+import Woolworths from "../assets/woolworths.svg";
+import Checkers from "../assets/checkers-logo.svg";
+import PicknPayLogo from "../assets/PicknPayLogo.svg";
+import Clicks from "../assets/Clicks-logo.svg";
+import Dischem from "../assets/DCP.JO_BIG-7415fb8e.png";
 
 export default function AllStores() {
     return (
-        <Row className="mx-4 px-2">
-            <Col className="py-3 mx-1 rounded store-card border">
-                <div className="d-flex align-items-center gap-3">
-                    <div className="store-logo-wrapper border py-3 px-2 rounded">
-                        <img src={PicknPayLogo} alt="store logo" width={60} />
-                    </div>
-                    <div className="store-details-wrapper">
-                        <span className="store-name">PicknPay Supermarket</span>
-                        <br />
-                        <span className="delivery-eta">
-                            <span>
-                                <svg
-                                    width="12"
-                                    height="20"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M11.11 23a.998.998 0 0 1-.99-1.11l.77-7.09H5a1 1 0 0 1-.83-1.56l7.89-11.8a1 1 0 0 1 1.17-.38 1 1 0 0 1 .65 1l-.77 7.14H19a1 1 0 0 1 .83 1.56l-7.89 11.8a1 1 0 0 1-.83.44Z"></path>
-                                </svg>
-                            </span>
-                            Delivery by 10:00am <span>• 30 mi</span>
-                        </span>
-                        <br />
-                        <span className="delivery-type">Alcohol- Organic - Groceries</span>
-                        <br />
-                        <span className="category">Grocery</span>
-                    </div>
-                </div>
-            </Col>
-            <Col className="py-3 mx-1 rounded store-card border">
-                <div className="d-flex align-items-center gap-3">
-                    <div className="store-logo-wrapper border py-3 px-2 rounded">
-                        <img src={Woolworths} alt="store logo" width={60} />
-                    </div>
-                    <div className="store-details-wrapper">
-                        <span className="store-name">Woolworths Foods</span>
-                        <br />
-                        <span className="delivery-eta">
-                            <span>
-                                <svg
-                                    width="12"
-                                    height="20"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M11.11 23a.998.998 0 0 1-.99-1.11l.77-7.09H5a1 1 0 0 1-.83-1.56l7.89-11.8a1 1 0 0 1 1.17-.38 1 1 0 0 1 .65 1l-.77 7.14H19a1 1 0 0 1 .83 1.56l-7.89 11.8a1 1 0 0 1-.83.44Z"></path>
-                                </svg>
-                            </span>
-                            Delivery by 9:30am <span>• 60 mi</span>
-                        </span>
-                        <br />
-                        <span className="delivery-type">Alcohol- Organic - Groceries</span>
-                        <br />
-                        <span className="category">Grocery</span>
-                    </div>
-                </div>
-            </Col>
-            <Col className="py-3 mx-1 rounded store-card border">
-                <div className="d-flex align-items-center gap-3">
-                    <div className="store-logo-wrapper border py-3 px-2 rounded">
-                        <img src={Checkers} alt="store logo" width={60} />
-                    </div>
-                    <div className="store-details-wrapper">
-                        <span className="store-name">Checkers</span>
-                        <br />
-                        <span className="delivery-eta">
-                            <span>
-                                <svg
-                                    width="12"
-                                    height="20"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M11.11 23a.998.998 0 0 1-.99-1.11l.77-7.09H5a1 1 0 0 1-.83-1.56l7.89-11.8a1 1 0 0 1 1.17-.38 1 1 0 0 1 .65 1l-.77 7.14H19a1 1 0 0 1 .83 1.56l-7.89 11.8a1 1 0 0 1-.83.44Z"></path>
-                                </svg>
-                            </span>
-                            Delivery by 8:30am <span>• 15 mi</span>
-                        </span>
-                        <br />
-                        <span className="delivery-type">Alcohol- Organic - Groceries</span>
-                        <br />
-                        <span className="category">Grocery</span>
-                    </div>
-                </div>
-            </Col>
+        <ul className="stores">
+            <li className="card">
+                <Store
+                    logoUrl={PicknPayLogo}
+                    storeName={"Bottles by PinknPay"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={" Delivery at 12:00pm"}
+                    categories={"Alcohol - Beverages"}
+                    productType={"Alcohol"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Checkers}
+                    storeName={"Checkers Liquor"}
+                    deliveryEta={"20mi"}
+                    deliveryTime={" Delivery at 11:00pm"}
+                    categories={"Alcohol - Beverages"}
+                    productType={"Alcohol"}
+                />
+            </li>
 
-        </Row>
+            <li className="card">
+                <Store
+                    logoUrl={LiquorBoys}
+                    storeName={"Liquor City"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={" Delivery at 12:00pm"}
+                    categories={"Alcohol - Beverages"}
+                    productType={"Alcohol"}
+                />
+            </li>
+
+            <li className="card">
+                <Store
+                    logoUrl={Cerave}
+                    storeName={"Cerave"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={"Delivery at 08:00am"}
+                    categories={"Beauty - skincare"}
+                    productType={"Skincare"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Deluxe}
+                    storeName={"Deluxe"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={"Delivery at 09:00am"}
+                    categories={"Beauty - skincare"}
+                    productType={"Skincare"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Sorbet}
+                    storeName={"Sorbet"}
+                    deliveryEta={"20mi"}
+                    deliveryTime={"Delivery at 10:00am"}
+                    categories={"Beauty - skincare"}
+                    productType={"Skincare"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Game}
+                    storeName={"Game store"}
+                    deliveryEta={"20mi"}
+                    deliveryTime={"Delivery at 12:00pm"}
+                    categories={"Electronics - Equipment"}
+                    productType={"Convenience"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={LeroyMerlin}
+                    storeName={"Leroy Merlin"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={"Delivery at 08:00am"}
+                    categories={"Electronics - Household"}
+                    productType={"Appliances"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Makro}
+                    storeName={"Makro"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={"Delivery at 12:00pm"}
+                    categories={"Electronics - Wholesale"}
+                    productType={"Wholesale"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={PicknPayLogo}
+                    storeName={"PicknPay"}
+                    deliveryEta={"60mi"}
+                    deliveryTime={"Delivery at 12:00pm"}
+                    categories={"Groceries - FMGC"}
+                    productType={"Groceries"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Woolworths}
+                    storeName={"Woolworths"}
+                    deliveryEta={"30mi"}
+                    deliveryTime={"Delivery at 12:00pm"}
+                    categories={"Groceries - FMGC"}
+                    productType={"Groceries"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Checkers}
+                    storeName={"Checkers"}
+                    deliveryEta={"20mi"}
+                    deliveryTime={"Delivery at 12:00pm"}
+                    categories={"Groceries - FMGC"}
+                    productType={"Groceries"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Clicks}
+                    storeName={"Clicks"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={" Delivery at 12:00pm"}
+                    categories={"Healthcare - Cosmetics"}
+                    productType={"Pharmacy"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Dischem}
+                    storeName={"Dischem Plus"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={" Delivery at 12:00pm"}
+                    categories={"Healthcare - Cosmetics"}
+                    productType={"Pharmacy"}
+                />
+            </li>
+            <li className="card">
+                <Store
+                    logoUrl={Makro}
+                    storeName={"Makro"}
+                    deliveryEta={"15mi"}
+                    deliveryTime={" Delivery at 12:00pm"}
+                    categories={" Electronics - Wholesale"}
+                    productType={"Pharmacy"}
+                />
+            </li>
+
+        </ul>
     );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col";
-import PicknPayLogo from "../PicknPayLogo.svg";
-import LiquorBoys from "../liquor-boys.png";
-import Makro from "../makro-icon-logo.png";
+import PicknPayLogo from "../assets/PicknPayLogo.svg";
+import LiquorBoys from "../assets/liquor-boys.png";
+import Makro from "../assets/makro-icon-logo.png";
 
 export default function Local() {
 

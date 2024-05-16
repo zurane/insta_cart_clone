@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Banner() {
-
     // function to remove the banner when you click the close icon.
     function onClickHandle() {
         document.getElementById("banner").classList.add("close");

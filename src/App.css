@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-y: scroll;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  font-family: "Cabinet Grotesk", sans-serif !important;
 }
 
 /* Loaction: src\pages\layout.jsx */
@@ -15,6 +15,11 @@ body {
   padding: 10px 30px;
   background: #ffffff;
   border-bottom: 1px solid #f5f5f5;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }
 /* Burger menu and logo container on the navigation  */
 .menu-wrap-container {
@@ -114,6 +119,9 @@ body {
 /* End of navigation bar styles */
 
 /* Shopping categories bottom bar tabs with icons */
+.store-feed-container {
+  margin-top: 100px;
+}
 .shopping-categories .category-name {
   font-size: 18px;
   text-align: left;
@@ -173,12 +181,8 @@ body {
 
 /* Store Cards styling */
 
-.store-card {
-  background: rgb(255, 255, 255);
-}
-
 .store-details-wrapper {
-  line-height: 20px;
+  line-height: 21px;
 }
 
 .store-name {
@@ -186,12 +190,16 @@ body {
   font-weight: 600;
 }
 
-.delivery-eta {
+.delivery-hours {
   color: #108910;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   gap: 2px;
+}
+
+.delivery-eta {
+  color: #000 !important;
 }
 
 .category {
@@ -203,8 +211,22 @@ body {
   background: #dadada;
 }
 
+.stores {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  margin: 0px 40px;
+  padding: 0;
+}
+
+.card {
+  width: 100%;
+}
+
 .banner {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -243,7 +265,6 @@ body {
 }
 
 .shop-btn {
-
   background-color: #ffffff;
   padding: 5px 10px;
   border-radius: 50px;
@@ -258,7 +279,6 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-
 
 .close {
   display: none;
