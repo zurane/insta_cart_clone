@@ -10,7 +10,7 @@ export default function StoreCard() {
     fontWeight: "bold",
     paddingBottom: 10 + "px",
     // here we use a string concatenation to combine multiple data types into a single string.
-    borderBottom: `${2 + "px" + " " + "solid" + " " + "black"}`,
+    borderBottom: 2 + "px" + "solid" + "black",
   };
 
   // Returns the current location object, which represents the current URL in web browsers.
